@@ -1,0 +1,43 @@
+.banner {
+    display: flex;
+    justify-content: space-between;
+    height: 75vh;
+    background-color: #121212;
+    color: #FFFFFF;
+    margin-bottom: 30vh;
+}
+
+.banner section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 115px;
+}
+
+.banner section img{
+    height: 60px;
+}
+
+.banner img{
+    border-radius: 10% 0 0 10%;
+}
+
+h1 {
+    background: linear-gradient(to right, #9305D6, #DD9AFC);
+    background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+p{
+    font-size: 1.0rem;
+    font-weight: 400;
+}
+
+.CardPosition{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
