@@ -1,42 +1,8 @@
-@font-face {
-  font-family: 'SFProDisplay';
-  src: url('./assets/fonts/SF-Pro-Text-Light.otf') format('opentype');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'SFProDisplay';
-  src: url('./assets/fonts/SF-Pro-Text-Light.otf') format('opentype');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'SFProDisplay';
-  src: url('./assets/fonts/SF-Pro-Text-Regular.otf') format('opentype');
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'SFProDisplay';
-  src: url('./assets/fonts/SF-Pro-Text-Semibold.otf') format('opentype');
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: 'SFProDisplay';
-  src: url('./assets/fonts/SF-Pro-Text-Bold.otf') format('opentype');
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'SFProDisplay';
-  src: url('./assets/fonts/SF-Pro-Text-Heavy.otf') format('opentype');
-  font-weight: 900;
-}
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 
 body {
   margin: 0;
-  font-family: 'SFProDisplay', sans-serif;
+  font-family: 'SF Pro Display', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

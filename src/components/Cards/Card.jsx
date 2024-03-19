@@ -5,18 +5,18 @@ import './Card.css';
 const Card = (props) => {
     const { titulo, subtitle, imagem, tamanho } = props;
 
-    let tamanhoEstilo = {};
+    let tamanhoClasse = '';
 
-    if (tamanho === 'medio') {
-        tamanhoEstilo = { width: '100px', height: '150px' };
-    } else if (tamanho === 'pequeno') {
-        tamanhoEstilo = { width: '40%', height: '30vh' };
+    if (tamanho === 'pequeno') {
+        tamanhoClasse = 'pequeno';
+    } else if (tamanho === 'medio') {
+        tamanhoClasse = 'medio';
     } else if (tamanho === 'grande') {
-        tamanhoEstilo = { width: '85%', height: '45vh' };
+        tamanhoClasse = 'grande';
     }
 
     return (
-        <div className='Card' style={{ ...tamanhoEstilo }}>
+        <div className={`Card ${tamanhoClasse}`}>
             <section>
                 <h2>{titulo}</h2>
                 <p>{subtitle}</p>

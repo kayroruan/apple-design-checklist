@@ -1,0 +1,20 @@
+.Footer{
+    margin-top: 25vh;
+    background-color: #121212;
+    color: #FAFAFA;
+    padding-left: 16vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.Footer .part{
+    display: flex;
+    gap: 16vw;
+}
+
+.Footer .part section{
+    display: flex;
+}

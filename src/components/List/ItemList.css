@@ -1,0 +1,13 @@
+.ItemList {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    gap: 16px;
+}
+
+.ItemList .opacity{
+    color: #FFFFFF;
+    font-family: 'SF Pro Display', 'italic';
+    font-weight: 100;
+    font-style: italic;
+}

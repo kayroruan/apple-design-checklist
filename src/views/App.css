@@ -2,37 +2,40 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/*CSS Regras de Loja*/
+.RegShop, .RegUi, .Ios, .TvOs{
+  text-align: justify;
+  padding-left: 6.5vw;
+  padding-right: 6.5vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Detail {
+    color: #FFFFFF;
+    font-family: 'SF Pro Display', 'italic';
+    font-weight: 100;
+    font-style: italic;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.RegShop h2, .RegUi h2, .Ios h2, .TvOs h2 {
+  color: #121212;
+}
+
+.MiniLink {
+  margin-top: 64px;
   display: flex;
-  flex-direction: column;
+  justify-content: start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.MiniLink a{
+  text-decoration: none;
+  color: #565656;
+  font-weight: 400;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MiniLink img {
+  height: 16px;
 }
+/*Fim do CSS Regras de Loja*/

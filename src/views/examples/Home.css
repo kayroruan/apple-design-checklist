@@ -1,34 +1,58 @@
-.banner {
+.Header {
     display: flex;
     justify-content: space-between;
-    height: 75vh;
+    height: 65vh;
     background-color: #121212;
     color: #FFFFFF;
-    margin-bottom: 30vh;
 }
 
-.banner section{
+.Header section{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    padding-left: 115px;
+    text-align: left;
+    padding-left: 80px;
+    gap: 0px;
 }
 
-.banner section img{
+.Header section h1 {
+    margin-bottom: 0px;
+}
+
+.Header section img{
     height: 60px;
 }
 
-.banner img{
+.Header img{
     border-radius: 10% 0 0 10%;
+}
+
+.HeaderImg{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 12.5vh;
+    padding-right: 12.5vh;
+    top: -80px;
+}
+
+.HeaderImg img{
+    height: 30%;
 }
 
 h1 {
     background: linear-gradient(to right, #9305D6, #DD9AFC);
     background-clip: text;
     color: transparent;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
+}
+
+h3{
+    color: black;
+    text-align: left;
+    font-size: 1.75rem;
 }
 
 p{
@@ -38,6 +62,27 @@ p{
 
 .CardPosition{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    }
+    justify-content: space-between;
+    row-gap: 10vh;
+    margin: 40px 0px 40px 0px;
+}
+
+.Home nav {
+    padding-left: 6.5vw;
+    padding-right: 6.5vw;
+}
+
+.Home a{
+    text-decoration: none;
+}
+
+.RefCheck a{
+    text-decoration: underline;
+}
+
+.RefCheck {
+    color: #949494;
+    margin-top: 25vh;
+}

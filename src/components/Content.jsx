@@ -1,17 +1,33 @@
 import React from "react";
 import './Content.css';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
+import Menu from "./Menu";
 import Home from "../views/examples/Home";
-import Pag1 from "../views/examples/Pag1";
+import RegUi from "../views/examples/RegUi";
+import RegShop from "../views/examples/RegShop";
+import Ios from "../views/examples/Ios";
+import TvOs from "../views/examples/TvOs";
 
-const Content = props => (
-    <main className="Content">
-        <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/Pag1" element={<Pag1 />}></Route>
-        </Routes>
-    </main>
-)
+
+function Content() {
+    const location = useLocation();
+
+    const isHomePage = location.pathname === '/';
+
+    return (
+        <main className="Content">
+            {!isHomePage && <Menu />}
+
+            <Routes>
+                <Route path="/" element={<Home />}></Route>
+                <Route path="/regras-gerais-de-UI" element={<RegUi />}></Route>
+                <Route path="/regras-de-loja" element={<RegShop />}></Route>
+                <Route path="/iOS" element={<Ios />}></Route>
+                <Route path="/tvOS" element={<TvOs />}></Route>
+            </Routes>
+        </main>
+    )
+}
 
 export default Content
