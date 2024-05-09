@@ -1,0 +1,33 @@
+.Coming {
+    display: flex;
+    align-items: center;
+    background-color:#9AD8FC;
+    color: #046299;
+    text-align: center;
+    align-items: center;
+}
+
+.Coming.pequeno span{
+    font-size: 0.8rem;
+}
+
+.Coming.grande {
+    font-size: 1.2rem;
+}
+
+.Coming.pequeno {
+    border-radius: 25vh;
+    height: 30px;
+    padding: 0px 8px 0px 8px;
+}
+
+.Coming.grande {
+    z-index: 99;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 25vh;
+    height: 30px;
+    padding: 8px 16px 8px 16px;
+
+}

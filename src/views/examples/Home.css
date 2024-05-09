@@ -6,7 +6,7 @@
     color: #FFFFFF;
 }
 
-.Header section{
+.Header section {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -20,15 +20,15 @@
     margin-bottom: 0px;
 }
 
-.Header section img{
+.Header section img {
     height: 60px;
 }
 
-.Header img{
+.Header img {
     border-radius: 10% 0 0 10%;
 }
 
-.HeaderImg{
+.HeaderImg {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -37,7 +37,7 @@
     top: -80px;
 }
 
-.HeaderImg img{
+.HeaderImg img {
     height: 30%;
 }
 
@@ -49,24 +49,37 @@ h1 {
     font-weight: 700;
 }
 
-h3{
+h3 {
     color: black;
     text-align: left;
     font-size: 1.75rem;
+    margin-top: 128px;
+    margin-bottom: 72px;
 }
 
-p{
+p {
     font-size: 1.0rem;
     font-weight: 400;
 }
 
-.CardPosition{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    row-gap: 10vh;
-    margin: 40px 0px 40px 0px;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+}
+
+.item1 {
+    grid-column: span 1;
+}
+
+.item2 {
+    grid-column: span 2;
+}
+
+.link-custom {
+    text-decoration: none;
+    color: inherit;
 }
 
 .Home nav {
@@ -74,15 +87,85 @@ p{
     padding-right: 6.5vw;
 }
 
-.Home a{
+.Home a {
     text-decoration: none;
 }
 
-.RefCheck a{
+.RefCheck a {
     text-decoration: underline;
 }
 
 .RefCheck {
     color: #949494;
     margin-top: 25vh;
+}
+
+.imgNavPag {
+    max-height: 22vw;
+    overflow: hidden;
+    position: absolute;
+    top: 170px;
+    left: 60vw;
+}
+
+.CardProDes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #121212;
+    box-shadow: 0px 4px 16px 10px rgba(206, 206, 206, 0.25);
+    color: #FFFFFF;
+    border-radius: 24px;
+    text-align: start;
+    transition: transform 0.5s ease;
+}
+
+.CardProDes section {
+    padding-left: 5vh;
+    padding-bottom: 5vh;
+}
+
+.CardProDes:hover {
+    transform: scale(1.02);
+}
+
+/* Conteúdo suspenso */
+.moreContent {
+    text-decoration: none;
+    position: relative;
+    width: auto;
+    top: -30px;
+    padding-left: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #058BD6;
+}
+
+.moreContent_content {
+    padding-left: 30px;
+}
+
+.opacity {
+    color: #FFFFFF;
+    font-family: 'SF Pro Display', 'italic';
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+@media (max-width: 768px) {
+    .HomeImg {
+        display: none;
+    }
+
+    .HeaderImg img {
+        height: 20vh;
+    }
+
+    .grid-container {
+        grid-template-columns: max-content;
+    }
+
 }

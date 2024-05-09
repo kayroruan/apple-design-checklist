@@ -8,7 +8,7 @@ import Medium from '../assets/images/medium.svg';
 const Footer = props => (
     <div className="Footer">
         <h2>Apple Design Checklist</h2>
-        <p>Created by</p>
+        <p>Criado por</p>
         <div className="part">
             <section>
                 <p>Letícia Pinheiro (UX Designer)</p>

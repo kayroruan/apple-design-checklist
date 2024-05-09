@@ -1,9 +1,10 @@
 import React from 'react';
+import Coming from '../Coming/Coming.jsx'
 
 import './Card.css';
 
 const Card = (props) => {
-    const { titulo, subtitle, imagem, tamanho } = props;
+    const { titulo, subtitle, imagem, tamanho, unable } = props;
 
     let tamanhoClasse = '';
 
@@ -16,12 +17,13 @@ const Card = (props) => {
     }
 
     return (
-        <div className={`Card ${tamanhoClasse}`}>
+        <div className={`Card ${tamanhoClasse} ${unable ? "unable" : ""}`}>
             <section>
                 <h2>{titulo}</h2>
                 <p>{subtitle}</p>
             </section>
             <img src={imagem} alt="" />
+            {unable && <Coming tamanho="grande"/>}
         </div>
     );
 };

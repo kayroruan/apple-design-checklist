@@ -1,5 +1,6 @@
 import React from "react";
-import './Menu.css'
+import './Menu.css';
+import Coming from './Coming/Coming.jsx'
 
 import { useState } from "react";
 import { Link, useLocation } from 'react-router-dom'
@@ -12,6 +13,10 @@ const Menu = () => {
     const toggleSubMenu = () => {
         setShowSubMenu(!showSubMenu);
     };
+
+    const closeSubMenu = () => {
+        setShowSubMenu(false);
+      };
 
     const location = useLocation();
 
@@ -37,7 +42,7 @@ const Menu = () => {
                     </p>
                     <p>
                         <Link to="/regras-gerais-de-UI" className={isRouteActive('/regras-gerais-de-UI') ? "activeLink" : ""}>
-                            Regras de UI
+                            Regras de gerais UI
                         </Link>
                     </p>
                     <p><button onClick={toggleSubMenu} 
@@ -47,8 +52,11 @@ const Menu = () => {
             </div>
             {showSubMenu && (
                 <div className="SubMenu">
-                    <p><Link to='/iOS' className={isRouteActive('/iOS') ? "activeLink" : ""}>iOS</Link></p>
-                    <p><Link to='/tvOS' className={isRouteActive('/tvOS') ? "activeLink" : ""}>tvOS</Link></p>
+                    <p><Link to='/iOS' onClick={closeSubMenu} className={isRouteActive('/iOS') ? "activeLink" : ""}>iOS</Link></p>
+                    <p><Link to='/iOS'>macOS</Link><Coming tamanho="pequeno"></Coming></p>
+                    <p><Link to='/iOS'>iPadOS</Link><Coming tamanho="pequeno"></Coming></p>
+                    <p><Link to='/iOS'>watchOS</Link><Coming tamanho="pequeno"></Coming></p>
+                    <p><Link to='/tvOS' onClick={closeSubMenu} className={isRouteActive('/tvOS') ? "activeLink" : ""}>tvOS</Link></p>
                 </div>
             )}
         </div>

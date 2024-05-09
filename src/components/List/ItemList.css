@@ -1,13 +1,68 @@
 .ItemList {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
-    margin-bottom: 32px;
     gap: 16px;
+    margin-bottom: 16px;
 }
 
-.ItemList .opacity{
+.ItemList .opacity {
     color: #FFFFFF;
     font-family: 'SF Pro Display', 'italic';
     font-weight: 100;
     font-style: italic;
+}
+
+.itemContainer {
+    display: flex;
+    align-items: flex-start;
+}
+
+.ItemList .opacity {
+    margin-left: 30px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    margin-right: 10px;
+    border: #FFFFFF solid 2px;
+    width: auto;
+    min-width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #9305D6;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 7.5px;
+    border: 1px solid #FFFFFF;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin: 1px 3.5px;
+}
+
+.imgList {
+    margin-bottom: 16px;
+    height: 12vh;
+}
+
+.imgList2 {
+    margin-bottom: 16px;
+    margin-left: -30px;
+    height: 35vh;
+}
+
+.LinkSpacePrev {
+    margin-left: 20%;
+    color: #058BD6;
 }

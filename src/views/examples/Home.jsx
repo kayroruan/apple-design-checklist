@@ -16,6 +16,7 @@ import iphoneImg from '../../assets/images/iphone.png'
 import macbookImg from '../../assets/images/macbook.png'
 import applewatchImg from '../../assets/images/applewatch.png'
 import RegLojaImg from '../../assets/images/regras-loja.jpg'
+import CardProDes from '../../assets/images/card-pro-des.svg'
 
 
 
@@ -27,7 +28,7 @@ const Home = props => (
                 <h1>Apple Design Checklist</h1>
                 <p>Cheque aqui se seus designs estão seguindo as regras da Apple :)</p>
             </section>
-            <img src={HomeImg} alt="" />
+            <img src={HomeImg} className="HomeImg" alt="" />
         </header>
         <div className="HeaderImg">
             <img src={iphoneImg} alt="" />
@@ -37,28 +38,55 @@ const Home = props => (
 
         <nav>
             <Link to='/regras-gerais-de-UI'><Card titulo="Regras gerais de UI" subtitle="Veja as principais regras de layout,
-             o que fazer e não fazer." tamanho="grande" imagem={RegUiImg}></Card></Link> 
+             o que fazer e não fazer." tamanho="grande" imagem={RegUiImg}></Card></Link>
 
             <h3>Para qual plataforma você está desenhando?</h3>
 
-            <section className="CardPosition">
-                <Card titulo="IOS" tamanho="pequeno" imagem={IosImg}></Card>
-                <Card titulo="watchOS" tamanho="pequeno" imagem={WatchOsImg}></Card>
-                <Card titulo="IPadOS" tamanho="pequeno" imagem={IPadOsImg}></Card>
-                <Card titulo="macOS" tamanho="pequeno" imagem={macOsImg}></Card>
-                <Card titulo="tvOS" tamanho="medio" imagem={tvOSImg}></Card>
+            <section className="grid-container">
+                <div className="item1">
+                    <Link to='/iOS' className="link-custom">
+                        <Card titulo="IOS" tamanho="pequeno" imagem={IosImg} />
+                    </Link>
+                </div>
+                <div className="item1">
+                    <Link className="link-custom">
+                        <Card titulo="watchOS" tamanho="pequeno" imagem={WatchOsImg} unable />
+                    </Link>
+                </div>
+                <div className="item1 unable">
+                    <Link className="link-custom">
+                        <Card titulo="IPadOS" tamanho="pequeno" imagem={IPadOsImg} unable />
+                    </Link>
+                </div>
+                <div className="item1 unable">
+                    <Link className="link-custom">
+                        <Card titulo="macOS" tamanho="pequeno" imagem={macOsImg} unable />
+                    </Link>
+                </div>
+                <div className="item2">
+                    <Link to='/tvOS' className="link-custom">
+                        <Card titulo="tvOS" tamanho="medio" imagem={tvOSImg} />
+                    </Link>
+                </div>
             </section>
 
             <h3>Vai publicar seu app?</h3>
 
-            <Card titulo="Regras da loja" tamanho="medio" imagem={RegLojaImg}></Card>
+            <Link to='/regras-de-loja' className="link-custom">
+                <Card titulo="Regras da loja" tamanho="medio" imagem={RegLojaImg}></Card>
+            </Link>
 
             <h3>Artigos relacionados: O que um Product Designer de Apps precisa saber?</h3>
 
-            <Card titulo="Regras gerais de UI" subtitle="Veja as principais regras de layout
-            , o que fazer e não fazer." tamanho="grande" imagem={RegUiImg}></Card>
+            <div className="CardProDes" style={{ cursor: 'pointer' }}>
+                <img src={CardProDes} alt="" />
+                <section>
+                    <h2>O que é necessário saber para ser um Product Designer focado em Apps Mobile?</h2>
+                    <p>Um guia básico para quem já tem conhecimentos de UX Design e quer começar a se especializar em aplicativos.</p>
+                </section>
+            </div>
 
-            <p className="RefCheck">Este site foi inspirado no <a href=""><b style={{color: '#979797'}}>Checklist Design</b></a> de <b>George Hatzis</b>.</p>
+            <p className="RefCheck">Este site foi inspirado no <a href=""><b style={{ color: '#979797' }}>Checklist Design</b></a> de <b>George Hatzis</b>.</p>
         </nav>
     </div>
 )

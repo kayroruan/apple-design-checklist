@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Content.css';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
@@ -14,6 +14,10 @@ function Content() {
     const location = useLocation();
 
     const isHomePage = location.pathname === '/';
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location.pathname]);
 
     return (
         <main className="Content">

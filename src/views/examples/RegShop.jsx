@@ -5,6 +5,9 @@ import List from "../../components/List/List.jsx";
 import ItemList from "../../components/List/ItemList.jsx";
 
 import GrayArrow from '../../assets/images/gray-arrow.svg';
+import RegUiImg from '../../assets/images/reg-ui.jpg';
+import ConfigIcon from '../../assets/images/config_icon.svg';
+import AppBankIcon from '../../assets/images/app_bank_icon.svg';
 
 
 const RegShop = () => {
@@ -14,6 +17,7 @@ const RegShop = () => {
             <h2>Regras da loja / iOS</h2>
             <nav>
                 <List title="CheckList Geral">
+                    <img src={RegUiImg} alt="" className="imgNavPag" />
                     <p className="Detail">*Os mockups da loja são as imagens de apresentação do aplicativo, os tamanhos fornecidos são das imagens em si e não o tamanho da tela de cada device.</p>
                     <ItemList text="Os mockups da loja tem tamanhos diferentes de acordo com cada device proposto"
                         subtext={<><span>iPad 2 Geração - recomendado: 2048x2732 px </span><br />
@@ -31,12 +35,15 @@ const RegShop = () => {
                     <p className="Detail">Mais informações: https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons</p>
                     <ItemList text="O ícone está detalhado e realista com a sensação de que “sai da tela”, usando 
                     camadas para causar essa sensação de profundidade"></ItemList>
+                    <img src={ConfigIcon} alt="" className="imgList" />
                     <ItemList text="O ícone segue as regras de dimensões impostas pela Apple (tamanho padrão: 1024×1024 px)"></ItemList>
                     <ItemList text="O ícone não possui texto dentro" subtext="O ícone não possui texto dentro"></ItemList>
                     <ItemList text="O ícone não possui borda" subtext="*iOS automaticamente adiciona uma borda de 1 pixel nos ícones."></ItemList>
                     <ItemList text="O ícone está em PNG"></ItemList>
                     <ItemList text="O texto embaixo do ícone/título do app possui no máximo 13 caracteres"
-                    subtext="*Essa também é uma recomendação pois a partir disso o título do aplicativo na homepage do celular do usuário fica com “...” pois não é possível aparecer todo"></ItemList>
+                        subtext="*Essa também é uma recomendação pois a partir disso o título do aplicativo na homepage do celular do usuário fica com “...” pois não é possível aparecer todo"></ItemList>
+                    <img src={AppBankIcon} alt="" className="imgList" />
+
                 </List>
             </nav>
         </div>

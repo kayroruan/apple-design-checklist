@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 import './ItemList.css'
 
-const ItemList = ({ text, subtext = "" }) => {
+const ItemList = ({ text, subtext = ""}) => {
+
   return (
     <div className="ItemList">
-      <div>
+      <div className="itemContainer">
         <input type="checkbox" />
-        <label>{text}</label><br></br>
+        <label>{text}</label>
       </div>
       <label className="opacity">{subtext && subtext}</label>
     </div>

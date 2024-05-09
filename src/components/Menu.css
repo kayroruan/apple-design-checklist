@@ -7,6 +7,8 @@
     align-items: center;
 }
 
+
+
 .Menu a{
     text-decoration: none;
 }
@@ -41,14 +43,33 @@ button {
     color: #FFFFFF;
     background-color: #232323;
     display: grid;
-    padding: 5vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4vw;
+    text-align: start;
+    padding: 8px 40px 8px 40px;
+    border-radius: 0px 0px 16px 16px;
+    z-index: 99;
 }
 
 .SubMenu a{
-    color: #FFFFFF;
+    color: #FAFAFA;
+    font-weight: 400;
     text-decoration: none;
+}
+
+.SubMenu p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
 }
 
 p .activeLink {
     color: #DD9AFC;
+}
+
+@media (max-width: 768px) {
+    .MenuNav{
+        display: none;
+    }
 }

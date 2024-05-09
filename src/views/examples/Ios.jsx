@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import List from "../../components/List/List.jsx";
@@ -6,13 +6,17 @@ import ItemList from "../../components/List/ItemList.jsx";
 
 import GrayArrow from '../../assets/images/gray-arrow.svg';
 
+import RegUiImg from '../../assets/images/reg-ui.jpg'
 
-const Ios = () => {
+
+
+const Ios = ({ moreContent = "" }) => {
     return (
         <div className="Ios">
             <div className="MiniLink"><Link to="/">Homepage</Link><img src={GrayArrow} alt="" /><Link to="/iOS">iOS</Link></div>
             <h2>iOS</h2>
             <List title="Checklist Geral">
+                <img src={RegUiImg} alt="" className="imgNavPag"/>
                 <ItemList text="No app está sendo utilizado o sistema de escala em pontos da Apple para definir a qualidade dos elementos da tela"></ItemList>
                 <ItemList text="A escala de pontos está correta para a plataforma" subtext="iOS - recomendado: @2x e @3x"></ItemList>
                 <ItemList text="As imagens tem ótima qualidade"></ItemList>

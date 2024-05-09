@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.link-custom {
+  display: block;
+  text-decoration: none; /* Remove sublinhado */
+  color: inherit; /* Define a cor do texto para azul */
+}
+
