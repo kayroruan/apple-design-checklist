@@ -48,6 +48,10 @@ const Menu = () => {
                     <p><button onClick={toggleSubMenu} 
                     className={isSubRouteActive(['/Plataformas', '/iOS', '/tvOS']) ? "activeLink" : ""}>Plataformas<img src={seta} alt="" style={{ height: '10px' }} /></button></p>
                 </section>
+                <section className="MenuNavMob">
+                    <button>a</button>
+                    <div></div>
+                </section>
 
             </div>
             {showSubMenu && (

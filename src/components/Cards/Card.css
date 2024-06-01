@@ -1,6 +1,7 @@
 .Card {
   position: relative;
   display: flex;
+  flex-grow: 1;
   justify-content: space-between;
   background-color: #121212;
   box-shadow: 0px 4px 16px 10px rgba(206, 206, 206, 0.25);
@@ -30,6 +31,8 @@
 
 .Card img {
   border-radius: 24px;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 h2 {
@@ -60,4 +63,40 @@ h2 {
 
 .Card.grande section p {
   margin-top: -10px;
+}
+
+@media (max-width: 768px) {
+  .Card {
+    width: 100%;
+    height: 20vh;
+    border-radius: 12px;
+  }
+  .Card.grande {
+    height: 35vh;
+  }
+  .Card.pequeno {
+    height: 25vh;
+  }
+  .Card.pequeno section {
+    padding-bottom: 20vh;
+  }
+  .Card.medio {
+    height: 25vh;
+  }
+  .Card.grande {
+    height: 35vh;
+    gap: 4vw;
+  }
+  .Card section, .Card img{
+    flex: 1;
+    overflow: hidden;
+  }
+  .Card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .Card section {
+    text-align: left;
+  }
 }

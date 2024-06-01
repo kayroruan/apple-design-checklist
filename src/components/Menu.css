@@ -33,6 +33,10 @@ button {
     gap: 2vw;
 }
 
+.MenuNavMob {
+    display: none;
+}
+
 .MenuNav a{
     color: #FFFFFF;
 }
@@ -71,5 +75,8 @@ p .activeLink {
 @media (max-width: 768px) {
     .MenuNav{
         display: none;
+    }
+    .MenuNavMob{
+        display: block;
     }
 }

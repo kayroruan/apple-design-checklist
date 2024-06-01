@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Coming from '../Coming/Coming.jsx'
 
 import './Card.css';
@@ -23,7 +23,7 @@ const Card = (props) => {
                 <p>{subtitle}</p>
             </section>
             <img src={imagem} alt="" />
-            {unable && <Coming tamanho="grande"/>}
+            {unable && <Coming tamanho="grande" />}
         </div>
     );
 };

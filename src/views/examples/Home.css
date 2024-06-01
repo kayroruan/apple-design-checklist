@@ -34,11 +34,11 @@
     position: relative;
     padding-left: 12.5vh;
     padding-right: 12.5vh;
-    top: -80px;
+    top: -8vh;
 }
 
 .HeaderImg img {
-    height: 30%;
+    height: 50vh;
 }
 
 h1 {
@@ -122,6 +122,7 @@ p {
 
 .CardProDes section {
     padding-left: 5vh;
+    padding-right: 5vh;
     padding-bottom: 5vh;
 }
 
@@ -156,16 +157,47 @@ p {
 
 
 @media (max-width: 768px) {
+
+    .Header section {
+        padding-left: 5vw;
+        max-width: 80vw;
+    }
+
     .HomeImg {
         display: none;
     }
 
+    .HeaderImg {
+        padding: 0 5vw 0 5vw;
+    }
+
     .HeaderImg img {
-        height: 20vh;
+        height: 20vw;
     }
 
-    .grid-container {
-        grid-template-columns: max-content;
+    .Home nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
+    .item1 {
+        grid-column: span 2;
+    }
+
+    .imgNavPag {
+        display: none;
+    }
+    .CardProDes {
+        border-radius: 12px;
+    }
+    .CardProDes section, .CardProDes img {
+        flex: 1;
+        overflow: hidden;
+    }
+    .CardProDes img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
