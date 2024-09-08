@@ -5,10 +5,11 @@ import { Link } from "react-router-dom";
 
 import List from "../../components/List/List.jsx";
 import ItemList from "../../components/List/ItemList.jsx";
+import Card from "../../components/Cards/Card";
 
 import GrayArrow from '../../assets/images/gray-arrow.svg';
-
-import RegUiImg from '../../assets/images/reg-ui.jpg'
+import RegLojaImg from '../../assets/images/regras-loja.svg'
+import window from '../../assets/images/tvos-window.svg'
 
 const TvOs = () => {
 
@@ -21,9 +22,9 @@ const TvOs = () => {
     return (
         <div className="TvOs">
             <div className="MiniLink"><Link to="/">Homepage</Link><img src={GrayArrow} alt="" /><Link to="/tvOS">tvOS</Link></div>
-            <h2>tvOS</h2>
+            <h2 style={{color: '#121212', background: 'none'}}>tvOS</h2>
             <List title="Checklist Geral">
-                <img src={RegUiImg} alt="" className="imgNavPag" />
+                <img src={window} alt="" className="imgNavPag" />
                 <ItemList text="A experiência do seu app traz uma sensação de realismo com várias camadas de imagem, 
                 transparência, escalas e animação, pra se conectar com os usuários."></ItemList>
                 <ItemList text="Os ícones possuem imagens em camadas (essa separação com o uso de transparência, 
@@ -64,6 +65,10 @@ const TvOs = () => {
                 </div>
                 <ItemList text=" A escala de pontos está correta para a plataforma" subtext="macOS, tvOS - recomendado: @1x e @2x"></ItemList>
             </List>
+
+            <Link to='/regras-de-loja' className="link-custom">
+                <Card titulo="Regras da loja" tamanho="medio" imagem={RegLojaImg}></Card>
+            </Link>
         </div>
     )
 }

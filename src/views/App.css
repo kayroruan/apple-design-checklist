@@ -10,15 +10,15 @@
   padding-right: 6.5vw;
 }
 
+.Ios .Card {
+  margin-bottom: 10vh;
+}
+
 .Detail {
     color: #FFFFFF;
     font-family: 'SF Pro Display', 'italic';
     font-weight: 100;
     font-style: italic;
-}
-
-.RegShop h2, .RegUi h2, .Ios h2, .TvOs h2 {
-  color: #121212;
 }
 
 .MiniLink {

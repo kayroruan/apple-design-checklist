@@ -6,6 +6,7 @@ import Menu from "./Menu";
 import Home from "../views/examples/Home";
 import RegUi from "../views/examples/RegUi";
 import RegShop from "../views/examples/RegShop";
+import Acessibility from "../views/examples/Acessibility"
 import Ios from "../views/examples/Ios";
 import TvOs from "../views/examples/TvOs";
 
@@ -27,6 +28,7 @@ function Content() {
                 <Route path="/" element={<Home />}></Route>
                 <Route path="/regras-gerais-de-UI" element={<RegUi />}></Route>
                 <Route path="/regras-de-loja" element={<RegShop />}></Route>
+                <Route path="/acessibilidade" element={<Acessibility />}></Route>
                 <Route path="/iOS" element={<Ios />}></Route>
                 <Route path="/tvOS" element={<TvOs />}></Route>
             </Routes>

@@ -101,11 +101,11 @@ p {
 }
 
 .imgNavPag {
-    max-height: 22vw;
+    max-height: 26vw;
     overflow: hidden;
     position: absolute;
     top: 170px;
-    left: 60vw;
+    left: 63vw;
 }
 
 .CardProDes {

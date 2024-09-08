@@ -5,7 +5,7 @@ import Coming from './Coming/Coming.jsx'
 import { useState } from "react";
 import { Link, useLocation } from 'react-router-dom'
 
-import seta from '../assets/images/seta.svg'
+import { SlArrowDown } from "react-icons/sl";
 
 const Menu = () => {
     const [showSubMenu, setShowSubMenu] = useState(false);
@@ -45,8 +45,13 @@ const Menu = () => {
                             Regras de gerais UI
                         </Link>
                     </p>
+                    <p>
+                        <Link to="/acessibilidade" className={isRouteActive('/acessibilidade') ? "activeLink" : ""}>
+                            Acessibilidade
+                        </Link>
+                    </p>
                     <p><button onClick={toggleSubMenu} 
-                    className={isSubRouteActive(['/Plataformas', '/iOS', '/tvOS']) ? "activeLink" : ""}>Plataformas<img src={seta} alt="" style={{ height: '10px' }} /></button></p>
+                    className={isSubRouteActive(['/Plataformas', '/iOS', '/tvOS']) ? "activeLink" : ""}>Plataformas<SlArrowDown /></button></p>
                 </section>
                 <section className="MenuNavMob">
                     <button>a</button>

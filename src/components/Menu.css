@@ -20,7 +20,6 @@ button {
     font: inherit;
     cursor: pointer;
     outline: none;
-    font-family: 'SFProDisplay', sans-serif;
     color: #FFFFFF;
     display: flex;
     gap: 10px;

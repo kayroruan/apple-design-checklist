@@ -52,14 +52,15 @@ input[type="checkbox"]:checked::after {
 }
 
 .imgList {
-    margin-bottom: 16px;
-    height: 12vh;
+    margin-top: -5vh;
+    margin-bottom: 5vh;
+    max-height: 12vh;
 }
 
 .imgList2 {
     margin-bottom: 16px;
     margin-left: -30px;
-    height: 35vh;
+    max-height: 35vh;
 }
 
 .LinkSpacePrev {
