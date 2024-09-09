@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Content></Content>
         <Footer></Footer>
       </BrowserRouter>
