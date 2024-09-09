@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/apple-design/static/css/main.f4d0b767.css",
-    "main.js": "/apple-design/static/js/main.94494ac2.js",
+    "main.js": "/apple-design/static/js/main.8465649f.js",
     "static/js/703.91a18441.chunk.js": "/apple-design/static/js/703.91a18441.chunk.js",
     "static/js/379.6706b05e.chunk.js": "/apple-design/static/js/379.6706b05e.chunk.js",
     "static/js/787.d1816b84.chunk.js": "/apple-design/static/js/787.d1816b84.chunk.js",
@@ -35,13 +35,13 @@
     "index.html": "/apple-design/index.html",
     "static/media/gray-arrow.svg": "/apple-design/static/media/gray-arrow.0e7a00c36b0b0c991533e1234dce374c.svg",
     "main.f4d0b767.css.map": "/apple-design/static/css/main.f4d0b767.css.map",
-    "main.94494ac2.js.map": "/apple-design/static/js/main.94494ac2.js.map",
+    "main.8465649f.js.map": "/apple-design/static/js/main.8465649f.js.map",
     "703.91a18441.chunk.js.map": "/apple-design/static/js/703.91a18441.chunk.js.map",
     "379.6706b05e.chunk.js.map": "/apple-design/static/js/379.6706b05e.chunk.js.map",
     "787.d1816b84.chunk.js.map": "/apple-design/static/js/787.d1816b84.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4d0b767.css",
-    "static/js/main.94494ac2.js"
+    "static/js/main.8465649f.js"
   ]
 }
